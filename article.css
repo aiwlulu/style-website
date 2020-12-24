@@ -1,0 +1,68 @@
+section.article{
+    justify-content:center;
+}
+section.article>.col{
+    width:940px;margin:auto;
+    display:flex;
+    margin-bottom:40px;
+    border:0.8px solid rgb(214, 214, 214);
+    cursor:pointer;
+}
+/* section.article>.col>.picture */
+section.article>.col>.picture{
+    width:50%;
+    justify-content:center;
+    opacity:0.7;
+    transition:opacity 0.3s;
+}
+section.article>.col>.picture:hover{
+    opacity:1;
+}
+
+section.article>.col>.picture-1{
+    background-image:url(article-1.jpg);
+    background-size:cover;
+}
+section.article>.col>.picture-2{
+    background-image:url(article-2.jpg);
+    background-size:cover;
+}
+/* section.article>.col>.words */
+section.article>.col>.words{
+    width:50%;
+    padding-left:40px;
+    padding-right:20px;
+}
+/* section.article>.col>.words>.content */
+section.article>.col>.words>.content{
+    font-size:0.9em;color:gray;
+}
+/* section.article>.col>.words>.block */
+section.article>.col>.words>.block{
+    display:flex;
+    position:relative;
+    margin:150px 0px 0px;
+    padding:10px 0px;
+    font-size:0.8em;color:gray;
+    border-top:0.8px solid rgb(214, 214, 214) ;
+}
+/* section.article>.col>.words>.block>.views */
+section.article>.col>.words>.block>.views{
+    margin-right:50px;
+}
+/* 螢幕尺寸小於 800 像素時，套用以下設定 */
+@media (max-width:800px){
+    section.article>.col{        
+        width:90%;
+        flex-wrap:wrap;
+    }
+    section.article>.col>.picture{
+        width:100%;
+        padding-bottom:80%;
+        opacity:0.8;
+    }
+    section.article>.col>.words{
+        width:100%;
+        height:50%;        
+    } 
+}
