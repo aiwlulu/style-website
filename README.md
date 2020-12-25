@@ -1,6 +1,6 @@
 # style-website
 
-使用技術 : HTML、CSS、一點點JS
+Programming Language : HTML, CSS, JavaScript
 
 
-網站連結 : https://aiwlulu.github.io/style-website
+Website Link : https://aiwlulu.github.io/style-website
